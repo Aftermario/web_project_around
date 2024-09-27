@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Aftermario" />
+    <meta name="description" content="Alrededor de los EEUU" />
+    <meta name="keywords" content="HTML, CSS, JS" />
+    <link rel="stylesheet" href="./pages/index.css" />
+
+    <title>Alrededor de los EEUU</title>
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <img
+          src="/images/header__logo.svg"
+          alt="logo Arround the US"
+          class="header__logo"
+        />
+        <div class="header__line"></div>
+      </header>
+      <main>
+        <section class="profile">
+          <div class="profile__column-left">
+            <div class="profile__avatar-container">
+              <img
+                src="/images/profile__image.jpg"
+                alt="imagen de perfil"
+                class="profile__avatar"
+              />
+              <button class="profile__avatar-edit"></button>
+            </div>
+            <div class="profile__info">
+              <div class="profile__name-content">
+                <h3 class="profile__name">Mario Alberto</h3>
+                <button class="profile__button-open"></button>
+              </div>
+              <p class="profile__job">Fotografo</p>
+            </div>
+          </div>
+
+          <div class="profile__column-right">
+            <button class="profile__button-add">+</button>
+          </div>
+        </section>
+        <ul class="elements__container">
+          <li class="element__card">
+            <img
+              src="./images/element-img1.jpg"
+              alt="Imagen 1"
+              class="element__img"
+            />
+            <div class="element__content">
+              <p class="element__text">Valle de Yosemite</p>
+              <button class="element__like" aria-label="Me gusta">
+                <img
+                  src="./images/element__like.svg"
+                  alt="Botón de me gusta"
+                  id="element-img"
+                />
+              </button>
+            </div>
+          </li>
+          <li class="element__card">
+            <img
+              src="./images/element-img2.jpg"
+              alt="Imagen 2"
+              class="element__img"
+            />
+            <div class="element__content">
+              <p class="element__text">Lago Louise</p>
+              <button class="element__like" aria-label="Me gusta">
+                <img
+                  src="./images/element__like.svg"
+                  alt="Botón de me gusta"
+                  id="element-img"
+                />
+              </button>
+            </div>
+          </li>
+          <li class="element__card">
+            <img
+              src="./images/element-img3.jpg"
+              alt="Imagen 3"
+              class="element__img"
+            />
+            <div class="element__content">
+              <p class="element__text">Montañas Calvas</p>
+              <button class="element__like" aria-label="Me gusta">
+                <img
+                  src="./images/element__like.svg"
+                  alt="Botón de me gusta"
+                  id="element-img"
+                />
+              </button>
+            </div>
+          </li>
+          <li class="element__card">
+            <img
+              src="./images/element-img4.jpg"
+              alt="Imagen 4"
+              class="element__img"
+            />
+            <div class="element__content">
+              <p class="element__text">Latemar</p>
+              <button class="element__like" aria-label="Me gusta">
+                <img
+                  src="./images/element__like.svg"
+                  alt="Botón de me gusta"
+                  id="element-img"
+                />
+              </button>
+            </div>
+          </li>
+          <li class="element__card">
+            <img
+              src="./images/element-img5.jpg"
+              alt="Imagen 5"
+              class="element__img"
+            />
+            <div class="element__content">
+              <p class="element__text">Vanoise National</p>
+              <button class="element__like" aria-label="Me gusta">
+                <img
+                  src="./images/element__like.svg"
+                  alt="Botón de me gusta"
+                  id="element-img"
+                />
+              </button>
+            </div>
+          </li>
+          <li class="element__card">
+            <img
+              src="./images/element-img6.jpg"
+              alt="Imagen 6"
+              class="element__img"
+            />
+            <div class="element__content">
+              <p class="element__text">Lago di Braies</p>
+              <button class="element__like" aria-label="Me gusta">
+                <img
+                  src="./images/element__like.svg"
+                  alt="Botón de me gusta"
+                  id="element-img"
+                />
+              </button>
+            </div>
+          </li>
+        </ul>
+        <div class="popup" id="popup-edit-profile">
+          <div class="popup__overlay"></div>
+          <div class="popup__container">
+            <form class="popup__form">
+              <button class="popup__button-close"></button>
+              <h2 class="popup__title">Editar perfil</h2>
+              <input
+                type="text"
+                class="popup__input"
+                id="input-name"
+                name="name"
+                placeholder="Nombre"
+                required
+              />
+              <div class="popup__line"></div>
+              <span class="input-error input-name-error"></span>
+              <input
+                class="popup__input"
+                id="input-aboutme"
+                name="about me"
+                placeholder="About me"
+                required
+              />
+              <div class="popup__line"></div>
+              <span class="input-error input-aboutme-error"></span>
+              <button class="popup__button-submit popup__button-submit_active">
+                Guardar
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <script src="/index.js"></script>
+      </main>
+      <footer class="footer">
+        <p class="footer__copyright">&#169; 2024. Aftermario</p>
+      </footer>
+    </div>
+  </body>
+</html>
