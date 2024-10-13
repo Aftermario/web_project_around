@@ -1,6 +1,6 @@
 # Tripleten web_project_around
 
-# Javascript y trabajar con DOM
+# Lógica y metodos de programación Java Script
 
 #### Proyecto para dispositivos: desktop + tablet + mobile.
 
