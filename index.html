@@ -1,166 +1,150 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project around</title>
     <meta name="author" content="Aftermario" />
-    <meta name="description" content="Alrededor de los EEUU" />
-    <meta name="keywords" content="HTML, CSS, JS" />
+    <meta name="description" content="Project around" />
+    <meta
+      name="keywords"
+      content="proyecto, html, css, java script, popup, modal"
+    />
+    <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" href="./pages/index.css" />
-
-    <title>Alrededor de los EEUU</title>
   </head>
   <body>
     <div class="page">
       <header class="header">
         <img
-          src="/images/header__logo.svg"
-          alt="logo Arround the US"
+          src="./images/logo.png"
+          alt="Logo del proyecto"
           class="header__logo"
         />
-        <div class="header__line"></div>
       </header>
-      <main>
-        <section class="profile">
-          <div class="profile__column-left">
-            <div class="profile__avatar-container">
-              <img
-                src="/images/profile__image.jpg"
-                alt="imagen de perfil"
-                class="profile__avatar"
-              />
-              <button class="profile__avatar-edit"></button>
-            </div>
-            <div class="profile__info">
-              <div class="profile__name-content">
-                <h3 class="profile__name">Mario Alberto</h3>
-                <button class="profile__button-open"></button>
-              </div>
-              <p class="profile__job">Fotografo</p>
-            </div>
+      <section class="profile">
+        <img
+          class="profile__avatar"
+          src="./images/Avatar.jpg"
+          alt="Avatar de Jacques Cousteau"
+        />
+        <div class="profile__content">
+          <div class="profile__info">
+            <p class="profile__name">Mario Garduño</p>
+            <p class="profile__hobbie">Fotografo</p>
           </div>
-
-          <div class="profile__column-right">
-            <button class="profile__button-add">+</button>
-          </div>
-        </section>
-        <ul class="elements__container">
-          <li class="element__card">
+          <button class="profile__edit-button" aria-label="Editar perfil">
             <img
-              src="./images/element-img1.jpg"
-              alt="Imagen 1"
-              class="element__img"
+              src="./images/Edit-Button.png"
+              alt="Botón para editar perfil"
             />
-            <div class="element__content">
-              <p class="element__text">Valle de Yosemite</p>
-              <button class="element__like" aria-label="Me gusta">
-                <img src="./images/element__like.svg" alt="Botón de me gusta" />
-              </button>
-            </div>
-          </li>
-          <li class="element__card">
-            <img
-              src="./images/element-img2.jpg"
-              alt="Imagen 2"
-              class="element__img"
-            />
-            <div class="element__content">
-              <p class="element__text">Lago Louise</p>
-              <button class="element__like" aria-label="Me gusta">
-                <img src="./images/element__like.svg" alt="Botón de me gusta" />
-              </button>
-            </div>
-          </li>
-          <li class="element__card">
-            <img
-              src="./images/element-img3.jpg"
-              alt="Imagen 3"
-              class="element__img"
-            />
-            <div class="element__content">
-              <p class="element__text">Montañas Calvas</p>
-              <button class="element__like" aria-label="Me gusta">
-                <img src="./images/element__like.svg" alt="Botón de me gusta" />
-              </button>
-            </div>
-          </li>
-          <li class="element__card">
-            <img
-              src="./images/element-img4.jpg"
-              alt="Imagen 4"
-              class="element__img"
-            />
-            <div class="element__content">
-              <p class="element__text">Latemar</p>
-              <button class="element__like" aria-label="Me gusta">
-                <img src="./images/element__like.svg" alt="Botón de me gusta" />
-              </button>
-            </div>
-          </li>
-          <li class="element__card">
-            <img
-              src="./images/element-img5.jpg"
-              alt="Imagen 5"
-              class="element__img"
-            />
-            <div class="element__content">
-              <p class="element__text">Vanoise National</p>
-              <button class="element__like" aria-label="Me gusta">
-                <img src="./images/element__like.svg" alt="Botón de me gusta" />
-              </button>
-            </div>
-          </li>
-          <li class="element__card">
-            <img
-              src="./images/element-img6.jpg"
-              alt="Imagen 6"
-              class="element__img"
-            />
-            <div class="element__content">
-              <p class="element__text">Lago di Braies</p>
-              <button class="element__like" aria-label="Me gusta">
-                <img src="./images/element__like.svg" alt="Botón de me gusta" />
-              </button>
-            </div>
-          </li>
-        </ul>
-        <div class="popup" id="popup-edit-profile">
-          <div class="popup__overlay"></div>
-          <div class="popup__container">
-            <form class="popup__form">
-              <button class="popup__button-close"></button>
-              <h2 class="popup__title">Editar perfil</h2>
-              <input
-                type="text"
-                class="popup__input"
-                id="input-name"
-                name="name"
-                placeholder="Nombre"
-                required
-              />
-              <div class="popup__line"></div>
-              <span class="input-error input-name-error"></span>
-              <input
-                class="popup__input"
-                id="input-aboutme"
-                name="about me"
-                placeholder="About me"
-                required
-              />
-              <div class="popup__line"></div>
-              <span class="input-error input-aboutme-error"></span>
-              <button class="popup__button-submit popup__button-submit_active">
-                Guardar
-              </button>
-            </form>
-          </div>
+          </button>
         </div>
-
-        <script src="/index.js"></script>
+        <button class="profile__add-button" aria-label="Agregar nueva imagen">
+          <img
+            src="./images/Add-Button.png"
+            alt="Botón para agregar nueva imagen"
+          />
+        </button>
+      </section>
+      <main class="main">
+        <div class="elements__container"></div>
+        <!-- Plantilla de card-->
+        <template class="template__card" id="template__card">
+          <div class="element">
+            <button class="element__photo-trash"></button>
+            <img src="" alt="" class="element__photo-link" />
+            <div class="element__info">
+              <h2 class="element__photo-name"></h2>
+              <button class="element__photo-like"></button>
+            </div>
+          </div>
+        </template>
       </main>
       <footer class="footer">
-        <p class="footer__copyright">&#169; 2024. Aftermario</p>
+        <p class="footer__copyright">&copy;2024 Aftermario</p>
       </footer>
     </div>
+    <!-- Agrandar una carta-->
+    <div class="popup" id="popup-show-card">
+      <div class="popup popup__overlay"></div>
+      <div class="popup__photo-content">
+        <img
+          class="popup__close-card"
+          src="images/Close Icon.png"
+          alt="boton para cerrar"
+          id="popup-close-card"
+          required
+        />
+        <img src="" alt="" class="popup__photo-link" />
+        <h3 class="popup__photo-name"></h3>
+      </div>
+    </div>
+    <!-- Insertar una carta-->
+    <div class="popup" id="popup-add-card">
+      <div class="form popup__overlay"></div>
+      <form class="form popup__form" id="form-addCard" novalidate>
+        <img
+          class="form__close-button form__close-button-addCard"
+          src="images/Close Icon.png"
+          alt="boton para cerrar"
+          id="close-addcard-form"
+          required
+        />
+        <h2 class="form__title">Nuevo Lugar</h2>
+        <input
+          class="form__input"
+          type="text"
+          id="input-card-name"
+          placeholder="Titulo"
+          minlength="2"
+          maxlength="40"
+          required
+        />
+        <input
+          class="form__input"
+          type="text"
+          id="input-card-link"
+          placeholder="Enlace a la imagen"
+          minlength="2"
+          maxlength="300"
+          required
+        />
+        <button class="form__create-button">Crear</button>
+      </form>
+    </div>
+    <!-- Modificar nombre y hobbie-->
+    <div class="popup" id="popup-profile">
+      <div class="form popup__overlay"></div>
+      <form class="form popup__form" id="form-profile" novalidate>
+        <img
+          class="form__close-button form__close-button-profile"
+          src="images/Close Icon.png"
+          alt="boton para cerrar"
+          id="close-profile-form"
+        />
+        <h2 class="form__title">Editar perfil</h2>
+        <input
+          type="text"
+          class="form__input"
+          id="input-name"
+          name="name"
+          placeholder="Nombre"
+          required
+        />
+        <span class="input-error input-name-error"></span>
+        <input
+          type="text"
+          class="form__input"
+          id="input-hobbie"
+          name="hobbie"
+          placeholder="Acerca de mí"
+          required
+        />
+        <span class="input-error input-hobbie-error"></span>
+        <button type="submit" class="form__submit">Guardar</button>
+      </form>
+    </div>
+    <script src="./scripts/index.js" type="module"></script>
   </body>
 </html>
